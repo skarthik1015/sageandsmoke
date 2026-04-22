@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sage &amp; Smoke — Body Care, By Scent</title>
+  <meta name="description" content="Sage & Smoke. Botanical body care crafted by scent. Launching soon." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/modal.css" />
+  <style>
+    body {
+      background: var(--color-bg);
+      font-family: var(--font-body);
+      color: var(--color-text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-12) var(--content-padding);
+      animation: heroFade 0.8s var(--ease-out) both;
+    }
+
+    @keyframes heroFade {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-eyebrow {
+      font-size: var(--size-xs);
+      font-weight: var(--weight-medium);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-4);
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(48px, 8vw, 96px);
+      font-weight: var(--weight-light);
+      letter-spacing: var(--tracking-tight);
+      line-height: 1.05;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-5);
+    }
+
+    .hero-subtitle {
+      font-size: var(--size-base);
+      font-weight: var(--weight-light);
+      color: var(--color-text-secondary);
+      line-height: var(--leading-loose);
+      max-width: 440px;
+      margin: 0 auto var(--space-8);
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--color-accent);
+      color: var(--color-text-inverse);
+      font-size: var(--size-xs);
+      font-weight: var(--weight-medium);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      padding: 16px var(--space-6);
+      transition: background var(--duration-fast) var(--ease-out),
+                  transform var(--duration-fast) var(--ease-out);
+      white-space: nowrap;
+    }
+
+    .btn-primary:hover {
+      background: var(--color-accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      font-size: var(--size-xs);
+      font-weight: var(--weight-medium);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-text-primary);
+      padding: 16px 0;
+      border-bottom: 1px solid var(--color-text-primary);
+      transition: color var(--duration-fast) var(--ease-out),
+                  border-color var(--duration-fast) var(--ease-out);
+      white-space: nowrap;
+    }
+
+    .btn-secondary:hover {
+      color: var(--color-text-secondary);
+      border-color: var(--color-text-secondary);
+    }
+
+    .hero-divider {
+      width: 1px;
+      height: 60px;
+      background: var(--color-border);
+      margin: var(--space-10) auto 0;
+    }
+
+    @media (max-width: 600px) {
+      .hero-actions {
+        flex-direction: column;
+        gap: var(--space-3);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="#" class="nav-link disabled" aria-disabled="true">Shop</a>
+        <a href="by-scent.html" class="nav-link">By Scent</a>
+        <a href="#" class="nav-link disabled" aria-disabled="true">Gifts &amp; Sets</a>
+      </div>
+      <div class="nav-logo">
+        <a href="index.html" aria-label="Sage & Smoke — Home">Sage &amp; Smoke</a>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="nav-icon-link disabled" aria-disabled="true">Search</a>
+        <a href="#" class="nav-icon-link disabled" aria-disabled="true">Account</a>
+        <a href="#" class="nav-icon-link disabled" aria-disabled="true">Bag</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
+    <a href="by-scent.html" class="nav-mobile-link">By Scent</a>
+  </div>
+
+  <!-- HERO -->
+  <main class="hero" role="main">
+    <p class="hero-eyebrow">Launching Soon</p>
+    <h1 class="hero-title">Body Care,<br>By Scent.</h1>
+    <p class="hero-subtitle">Three scent stories. Three rituals. Crafted to ground the body and quiet the mind.</p>
+    <div class="hero-actions">
+      <a href="by-scent.html" class="btn-primary">Explore By Scent</a>
+      <button class="btn-secondary btn-waitlist">Join the Waitlist</button>
+    </div>
+    <div class="hero-divider" aria-hidden="true"></div>
+  </main>
+
+  <!-- WAITLIST MODAL -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="waitlist-modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-form-wrap">
+        <p class="modal-eyebrow">Coming Soon</p>
+        <h2 class="modal-title" id="modal-title">Join the Waitlist</h2>
+        <p class="modal-subtitle">Be the first to know when Sage &amp; Smoke launches. No noise, just the moment it's ready.</p>
+        <form class="modal-form" novalidate>
+          <input class="modal-input" type="email" name="email" placeholder="your@email.com" autocomplete="email" required aria-label="Email address" />
+          <button type="submit" class="modal-submit">Notify Me</button>
+        </form>
+      </div>
+      <div class="modal-success" aria-live="polite">
+        <div class="modal-success-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 class="modal-success-title">You're on the list.</h3>
+        <p class="modal-success-text">We'll reach out the moment Sage &amp; Smoke is ready.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>By Scent — Sage &amp; Smoke</title>
+  <meta name="description" content="Explore Sage & Smoke body care collections by scent. Three distinct scent stories crafted for the senses." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/by-scent.css" />
+  <link rel="stylesheet" href="assets/css/modal.css" />
+</head>
+<body class="page-by-scent">
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <div class="nav-left">
+        <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#" class="nav-link">Shop</a>
+        <a href="by-scent.html" class="nav-link">By Scent</a>
+        <a href="#" class="nav-link disabled" aria-disabled="true">Gifts &amp; Sets</a>
+      </div>
+
+      <div class="nav-logo">
+        <a href="index.html" aria-label="Sage & Smoke — Home">Sage &amp; Smoke</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="#" class="nav-icon-link">Search</a>
+        <a href="#" class="nav-icon-link">Account</a>
+        <a href="#" class="nav-icon-link">Bag</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
+    <a href="#" class="nav-mobile-link">Shop</a>
+    <a href="by-scent.html" class="nav-mobile-link">By Scent</a>
+    <a href="#" class="nav-mobile-link disabled" aria-disabled="true">Gifts &amp; Sets</a>
+    <a href="#" class="nav-mobile-link">Search</a>
+    <a href="#" class="nav-mobile-link">Account</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SCENT TAB BAR
+  ══════════════════════════════════════ -->
+  <div class="scent-tab-bar" role="tablist" aria-label="Filter by scent">
+    <div class="scent-tab-inner">
+      <button class="scent-tab active" data-scent="all" role="tab" aria-selected="true">All Scents</button>
+      <button class="scent-tab" data-scent="scent-1" role="tab" aria-selected="false">Scent 1</button>
+      <button class="scent-tab" data-scent="scent-2" role="tab" aria-selected="false">Scent 2</button>
+      <button class="scent-tab" data-scent="scent-3" role="tab" aria-selected="false">Scent 3</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       MAIN COLLECTION LAYOUT
+  ══════════════════════════════════════ -->
+  <div class="collection-layout page-fade">
+
+    <!-- LEFT: Scent Panel -->
+    <aside class="scent-panel" aria-label="Scent description">
+
+      <!-- Mobile accordion toggle -->
+      <button class="panel-accordion-toggle" aria-expanded="false" aria-controls="scent-panel-content">
+        About this Scent
+        <span class="chevron" aria-hidden="true"></span>
+      </button>
+
+      <div class="scent-panel-content" id="scent-panel-content">
+
+        <div class="scent-identity">
+          <div class="scent-dot" aria-hidden="true"></div>
+          <h2 class="scent-name-display">All Scents</h2>
+        </div>
+
+        <p class="scent-description">
+          Three distinct scent stories, each crafted to ground the body and quiet the mind. Explore our full collection and find the one that feels like you.
+        </p>
+
+        <div class="scent-notes" id="scent-notes-block">
+          <p class="notes-label">Notes</p>
+          <div class="notes-section" id="notes-section">
+            <div class="notes-row">
+              <span class="notes-tier">Top</span>
+              <span class="notes-value" id="notes-top">Note A, Note B, Note C</span>
+            </div>
+            <div class="notes-row">
+              <span class="notes-tier">Heart</span>
+              <span class="notes-value" id="notes-heart">Note D, Note E, Note F</span>
+            </div>
+            <div class="notes-row">
+              <span class="notes-tier">Base</span>
+              <span class="notes-value" id="notes-base">Note G, Note H, Note I</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- RIGHT: Product Grid -->
+    <main class="products-grid" id="products-grid" role="main">
+
+      <!-- ── SCENT 1 GROUP ─────────────────── -->
+      <div class="scent-group" data-scent="scent-1">
+        <p class="scent-group-label">Scent 1</p>
+
+        <!-- Card: Body Wash -->
+        <a href="product.html?product=body-wash&scent=scent-1" class="product-card" data-scent="scent-1" aria-label="Body Wash — Scent 1">
+          <div class="card-image-wrap">
+            <div class="card-placeholder" aria-hidden="true">
+              <div class="card-placeholder-bottle">
+                <div class="card-placeholder-label">
+                  <span>Sage &amp; Smoke</span>
+                  <span>Body Wash</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <p class="card-product-name">Body Wash</p>
+            <p class="card-scent-line">Scent 1</p>
+          </div>
+        </a>
+
+        <!-- Card: Body Lotion -->
+        <a href="product.html?product=body-lotion&scent=scent-1" class="product-card" data-scent="scent-1" aria-label="Body Lotion — Scent 1">
+          <div class="card-image-wrap">
+            <div class="card-placeholder" aria-hidden="true">
+              <div class="card-placeholder-bottle">
+                <div class="card-placeholder-label">
+                  <span>Sage &amp; Smoke</span>
+                  <span>Body Lotion</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <p class="card-product-name">Body Lotion</p>
+            <p class="card-scent-line">Scent 1</p>
+          </div>
+        </a>
+
+        <!-- Card: Deluxe Body -->
+        <a href="product.html?product=deluxe-body&scent=scent-1" class="product-card" data-scent="scent-1" aria-label="Deluxe Body — Scent 1">
+          <div class="card-image-wrap">
+            <div class="card-placeholder" aria-hidden="true">
+              <div class="card-placeholder-bottle">
+                <div class="card-placeholder-label">
+                  <span>Sage &amp; Smoke</span>
+                  <span>Deluxe Body</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <p class="card-product-name">Deluxe Body</p>
+            <p class="card-scent-line">Scent 1</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- ── SCENT 2 GROUP ─────────────────── -->
+      <div class="scent-group" data-scent="scent-2">
+        <p class="scent-group-label">Scent 2</p>
+
+        <a href="product.html?product=body-wash&scent=scent-2" class="product-card" data-scent="scent-2" aria-label="Body Wash — Scent 2">
+          <div class="card-image-wrap">
+            <div class="card-placeholder" aria-hidden="true">
+              <div class="card-placeholder-bottle">
+                <div class="card-placeholder-label">
+                  <span>Sage &amp; Smoke</span>
+                  <span>Body Wash</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <p class="card-product-name">Body Wash</p>
+            <p class="card-scent-line">Scent 2</p>
+          </div>
+        </a>
+
+        <a href="product.html?product=body-lotion&scent=scent-2" class="product-card" data-scent="scent-2" aria-label="Body Lotion — Scent 2">
+          <div class="card-image-wrap">
+            <div class="card-placeholder" aria-hidden="true">
+              <div class="card-placeholder-bottle">
+                <div class="card-placeholder-label">
+                  <span>Sage &amp; Smoke</span>
+                  <span>Body Lotion</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <p class="card-product-name">Body Lotion</p>
+            <p class="card-scent-line">Scent 2</p>
+          </div>
+        </a>
+
+        <a href="product.html?product=deluxe-body&scent=scent-2" class="product-card" data-scent="scent-2" aria-label="Deluxe Body — Scent 2">
+          <div class="card-image-wrap">
+            <div class="card-placeholder" aria-hidden="true">
+              <div class="card-placeholder-bottle">
+                <div class="card-placeholder-label">
+                  <span>Sage &amp; Smoke</span>
+                  <span>Deluxe Body</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <p class="card-product-name">Deluxe Body</p>
+            <p class="card-scent-line">Scent 2</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- ── SCENT 3 GROUP ─────────────────── -->
+      <div class="scent-group" data-scent="scent-3">
+        <p class="scent-group-label">Scent 3</p>
+
+        <a href="product.html?product=body-wash&scent=scent-3" class="product-card" data-scent="scent-3" aria-label="Body Wash — Scent 3">
+          <div class="card-image-wrap">
+            <div class="card-placeholder" aria-hidden="true">
+              <div class="card-placeholder-bottle">
+                <div class="card-placeholder-label">
+                  <span>Sage &amp; Smoke</span>
+                  <span>Body Wash</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <p class="card-product-name">Body Wash</p>
+            <p class="card-scent-line">Scent 3</p>
+          </div>
+        </a>
+
+        <a href="product.html?product=body-lotion&scent=scent-3" class="product-card" data-scent="scent-3" aria-label="Body Lotion — Scent 3">
+          <div class="card-image-wrap">
+            <div class="card-placeholder" aria-hidden="true">
+              <div class="card-placeholder-bottle">
+                <div class="card-placeholder-label">
+                  <span>Sage &amp; Smoke</span>
+                  <span>Body Lotion</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <p class="card-product-name">Body Lotion</p>
+            <p class="card-scent-line">Scent 3</p>
+          </div>
+        </a>
+
+        <a href="product.html?product=deluxe-body&scent=scent-3" class="product-card" data-scent="scent-3" aria-label="Deluxe Body — Scent 3">
+          <div class="card-image-wrap">
+            <div class="card-placeholder" aria-hidden="true">
+              <div class="card-placeholder-bottle">
+                <div class="card-placeholder-label">
+                  <span>Sage &amp; Smoke</span>
+                  <span>Deluxe Body</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <p class="card-product-name">Deluxe Body</p>
+            <p class="card-scent-line">Scent 3</p>
+          </div>
+        </a>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       WAITLIST MODAL
+  ══════════════════════════════════════ -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="waitlist-modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <div class="modal-form-wrap">
+        <p class="modal-eyebrow">Coming Soon</p>
+        <h2 class="modal-title" id="modal-title">Join the Waitlist</h2>
+        <p class="modal-subtitle">Be the first to know when Sage &amp; Smoke launches. No noise, just the moment it's ready.</p>
+
+        <form class="modal-form" novalidate>
+          <input
+            class="modal-input"
+            type="email"
+            name="email"
+            placeholder="your@email.com"
+            autocomplete="email"
+            required
+            aria-label="Email address"
+          />
+          <button type="submit" class="modal-submit">Notify Me</button>
+        </form>
+      </div>
+
+      <div class="modal-success" aria-live="polite">
+        <div class="modal-success-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <h3 class="modal-success-title">You're on the list.</h3>
+        <p class="modal-success-text">We'll reach out the moment Sage &amp; Smoke is ready.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/scent-tabs.js"></script>
+  <script src="assets/js/modal.js"></script>
+</body>
+</html>

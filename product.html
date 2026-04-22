@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Body Wash — Sage &amp; Smoke</title>
+  <meta name="description" content="An aromatic gel cleanser infused with botanical extracts for a rich, hydrating lather that leaves skin soft and radiant." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/product.css" />
+  <link rel="stylesheet" href="assets/css/modal.css" />
+</head>
+<body class="page-product">
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <div class="nav-left">
+        <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#" class="nav-link">Shop</a>
+        <a href="by-scent.html" class="nav-link">By Scent</a>
+        <a href="#" class="nav-link disabled" aria-disabled="true">Gifts &amp; Sets</a>
+      </div>
+
+      <div class="nav-logo">
+        <a href="index.html" aria-label="Sage & Smoke — Home">Sage &amp; Smoke</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="#" class="nav-icon-link">Search</a>
+        <a href="#" class="nav-icon-link">Account</a>
+        <a href="#" class="nav-icon-link">Bag</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
+    <a href="#" class="nav-mobile-link">Shop</a>
+    <a href="by-scent.html" class="nav-mobile-link">By Scent</a>
+    <a href="#" class="nav-mobile-link disabled" aria-disabled="true">Gifts &amp; Sets</a>
+    <a href="#" class="nav-mobile-link">Search</a>
+    <a href="#" class="nav-mobile-link">Account</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       BREADCRUMB
+  ══════════════════════════════════════ -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="by-scent.html" class="breadcrumb-link">By Scent</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current">Body Wash</span>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       PRODUCT LAYOUT
+  ══════════════════════════════════════ -->
+  <div class="product-layout">
+
+    <!-- LEFT: Image Gallery -->
+    <section class="product-gallery" aria-label="Product images">
+
+      <!-- Main image -->
+      <div class="gallery-main">
+        <span class="gallery-badge" aria-label="Top rated product">Top Rated</span>
+
+        <!-- Placeholder (replace with <img> when assets are ready) -->
+        <div class="gallery-placeholder" aria-hidden="true">
+          <div class="gallery-placeholder-bottle">
+            <div class="gallery-placeholder-text">
+              <span>Scent 1</span>
+              <span>Sage &amp; Smoke</span>
+              <span>Body Wash</span>
+              <span>450 ML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Uncomment and use when real images are available:
+        <img class="gallery-main-img" src="assets/images/body-wash-scent1-01.jpg" alt="Body Wash — Scent 1, front view" />
+        -->
+      </div>
+
+      <!-- Thumbnails (desktop) -->
+      <div class="gallery-thumbs" role="list">
+        <button class="gallery-thumb active" role="listitem" aria-label="View image 1" data-full="assets/images/body-wash-scent1-01.jpg">
+          <div style="width:100%;height:100%;background:var(--color-bg-card-alt);"></div>
+        </button>
+        <button class="gallery-thumb" role="listitem" aria-label="View image 2" data-full="assets/images/body-wash-scent1-02.jpg">
+          <div style="width:100%;height:100%;background:var(--color-border);"></div>
+        </button>
+        <button class="gallery-thumb" role="listitem" aria-label="View image 3" data-full="assets/images/body-wash-scent1-03.jpg">
+          <div style="width:100%;height:100%;background:var(--color-bg-card-alt);"></div>
+        </button>
+        <button class="gallery-thumb" role="listitem" aria-label="View image 4" data-full="assets/images/body-wash-scent1-04.jpg">
+          <div style="width:100%;height:100%;background:var(--color-border);"></div>
+        </button>
+        <button class="gallery-thumb" role="listitem" aria-label="View image 5" data-full="assets/images/body-wash-scent1-05.jpg">
+          <div style="width:100%;height:100%;background:var(--color-bg-card-alt);"></div>
+        </button>
+        <button class="gallery-thumb" role="listitem" aria-label="View image 6" data-full="assets/images/body-wash-scent1-06.jpg">
+          <div style="width:100%;height:100%;background:var(--color-border);"></div>
+        </button>
+      </div>
+
+      <!-- Dot indicators (mobile carousel) -->
+      <div class="gallery-dots" role="tablist" aria-label="Image navigation">
+        <button class="gallery-dot active" role="tab" aria-label="Image 1" aria-selected="true"></button>
+        <button class="gallery-dot" role="tab" aria-label="Image 2" aria-selected="false"></button>
+        <button class="gallery-dot" role="tab" aria-label="Image 3" aria-selected="false"></button>
+        <button class="gallery-dot" role="tab" aria-label="Image 4" aria-selected="false"></button>
+        <button class="gallery-dot" role="tab" aria-label="Image 5" aria-selected="false"></button>
+        <button class="gallery-dot" role="tab" aria-label="Image 6" aria-selected="false"></button>
+      </div>
+
+    </section>
+
+    <!-- RIGHT: Product Info -->
+    <section class="product-info" aria-label="Product details">
+
+      <p class="product-type-label">Body Wash</p>
+
+      <h1 class="product-title">Scent 1</h1>
+
+      <p class="product-description">
+        An aromatic gel cleanser infused with botanical extracts and hyaluronic complex for a rich, hydrating lather that leaves skin soft, smooth, and gently scented.
+      </p>
+
+      <p class="product-meta-row">15.2 FL OZ &nbsp;/&nbsp; 450 ML</p>
+
+      <!-- Reviews — hidden pre-launch, uncomment at launch -->
+      <!--
+      <div class="product-reviews">
+        <div class="review-stars" aria-label="4.9 out of 5 stars">
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+          <span class="star" aria-hidden="true">★</span>
+        </div>
+        <span class="review-count">4.9 (5,663 reviews)</span>
+      </div>
+      -->
+
+      <div class="product-divider" aria-hidden="true"></div>
+
+      <!-- Scent selector -->
+      <div class="scent-selector" role="group" aria-labelledby="scent-selector-label">
+        <p class="scent-selector-label" id="scent-selector-label">
+          Scent: <span>Scent 1</span>
+        </p>
+        <div class="scent-pills">
+          <button class="scent-pill active" aria-pressed="true">Scent 1</button>
+          <button class="scent-pill" aria-pressed="false">Scent 2</button>
+          <button class="scent-pill" aria-pressed="false">Scent 3</button>
+        </div>
+      </div>
+
+      <!-- Price — hidden pre-launch, uncomment at launch -->
+      <!--
+      <p class="product-price" aria-label="Price">₹ 0,000</p>
+      -->
+
+      <!-- Waitlist CTA -->
+      <div class="waitlist-cta-wrap">
+        <button class="btn-waitlist" aria-haspopup="dialog" aria-controls="waitlist-modal">
+          Join the Waitlist
+        </button>
+        <p class="waitlist-subtext">Be the first to know when we launch.</p>
+      </div>
+
+      <div class="product-divider" aria-hidden="true"></div>
+
+      <!-- Scent notes -->
+      <div class="scent-notes-detail">
+        <p class="notes-label" style="font-family:var(--font-body);font-size:var(--size-xs);font-weight:var(--weight-medium);letter-spacing:var(--tracking-widest);text-transform:uppercase;color:var(--color-text-primary);margin-bottom:var(--space-2);">Notes</p>
+        <div class="notes-row" style="display:flex;gap:var(--space-1);margin-bottom:10px;font-size:var(--size-sm);line-height:var(--leading-normal);">
+          <span style="font-weight:var(--weight-medium);color:var(--color-text-primary);min-width:52px;">Top</span>
+          <span style="color:var(--color-text-secondary);font-weight:var(--weight-light);">Note A, Note B, Note C</span>
+        </div>
+        <div class="notes-row" style="display:flex;gap:var(--space-1);margin-bottom:10px;font-size:var(--size-sm);line-height:var(--leading-normal);">
+          <span style="font-weight:var(--weight-medium);color:var(--color-text-primary);min-width:52px;">Heart</span>
+          <span style="color:var(--color-text-secondary);font-weight:var(--weight-light);">Note D, Note E, Note F</span>
+        </div>
+        <div class="notes-row" style="display:flex;gap:var(--space-1);margin-bottom:10px;font-size:var(--size-sm);line-height:var(--leading-normal);">
+          <span style="font-weight:var(--weight-medium);color:var(--color-text-primary);min-width:52px;">Base</span>
+          <span style="color:var(--color-text-secondary);font-weight:var(--weight-light);">Note G, Note H, Note I</span>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       COMPLETE YOUR ROUTINE
+  ══════════════════════════════════════ -->
+  <section class="routine-section" aria-labelledby="routine-heading">
+    <h2 class="routine-heading" id="routine-heading">Complete Your Routine</h2>
+
+    <div class="routine-strip">
+
+      <!-- Body Lotion -->
+      <a href="product.html?product=body-lotion&scent=scent-1" class="routine-card" aria-label="Body Lotion — Scent 1">
+        <div class="routine-card-image" aria-hidden="true">
+          <div style="width:80px;height:160px;background:var(--color-bg-card-alt);border-radius:40px 40px 6px 6px;"></div>
+        </div>
+        <p class="routine-card-name">Body Lotion</p>
+        <span class="routine-card-link">View Product</span>
+      </a>
+
+      <!-- Deluxe Body -->
+      <a href="product.html?product=deluxe-body&scent=scent-1" class="routine-card" aria-label="Deluxe Body — Scent 1">
+        <div class="routine-card-image" aria-hidden="true">
+          <div style="width:80px;height:160px;background:var(--color-bg-card-alt);border-radius:40px 40px 6px 6px;"></div>
+        </div>
+        <p class="routine-card-name">Deluxe Body</p>
+        <span class="routine-card-link">View Product</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Mobile sticky CTA -->
+  <div class="sticky-cta" aria-hidden="true">
+    <button class="btn-waitlist" aria-haspopup="dialog" aria-controls="waitlist-modal">
+      Join the Waitlist
+    </button>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       WAITLIST MODAL
+  ══════════════════════════════════════ -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="waitlist-modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <div class="modal-form-wrap">
+        <p class="modal-eyebrow">Coming Soon</p>
+        <h2 class="modal-title" id="modal-title">Join the Waitlist</h2>
+        <p class="modal-subtitle">Be the first to know when Sage &amp; Smoke launches. No noise, just the moment it's ready.</p>
+
+        <form class="modal-form" novalidate>
+          <input
+            class="modal-input"
+            type="email"
+            name="email"
+            placeholder="your@email.com"
+            autocomplete="email"
+            required
+            aria-label="Email address"
+          />
+          <button type="submit" class="modal-submit">Notify Me</button>
+        </form>
+      </div>
+
+      <div class="modal-success" aria-live="polite">
+        <div class="modal-success-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <h3 class="modal-success-title">You're on the list.</h3>
+        <p class="modal-success-text">We'll reach out the moment Sage &amp; Smoke is ready.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/modal.js"></script>
+</body>
+</html>

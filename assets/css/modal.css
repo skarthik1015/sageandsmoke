@@ -1,0 +1,200 @@
+/* ═══════════════════════════════════════════
+   WAITLIST MODAL
+═══════════════════════════════════════════ */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg-overlay);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-normal) var(--ease-out);
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-card {
+  background: var(--color-bg);
+  width: 100%;
+  max-width: 440px;
+  padding: var(--space-8) var(--space-6);
+  position: relative;
+  transform: translateY(20px) scale(0.98);
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.modal-overlay.open .modal-card {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.modal-close:hover {
+  color: var(--color-text-primary);
+}
+
+.modal-close svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.modal-eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--size-xs);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: var(--size-2xl);
+  font-weight: var(--weight-light);
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-2);
+}
+
+.modal-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--size-base);
+  font-weight: var(--weight-light);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-5);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.modal-input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  padding: 14px var(--space-2);
+  font-family: var(--font-body);
+  font-size: var(--size-base);
+  font-weight: var(--weight-light);
+  color: var(--color-text-primary);
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.modal-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.modal-input:focus {
+  border-color: var(--color-text-primary);
+}
+
+.modal-submit {
+  width: 100%;
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+  font-family: var(--font-body);
+  font-size: var(--size-xs);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.modal-submit:hover {
+  background: var(--color-accent-hover);
+}
+
+/* Success state */
+.modal-success {
+  display: none;
+  text-align: center;
+  padding: var(--space-4) 0;
+}
+
+.modal-success.visible {
+  display: block;
+}
+
+.modal-success-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-3);
+}
+
+.modal-success-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--color-text-primary);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.modal-success-title {
+  font-family: var(--font-display);
+  font-size: var(--size-xl);
+  font-weight: var(--weight-light);
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: var(--space-2);
+}
+
+.modal-success-text {
+  font-family: var(--font-body);
+  font-size: var(--size-sm);
+  font-weight: var(--weight-light);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+}
+
+.modal-form-wrap.hidden {
+  display: none;
+}
+
+/* ── Responsive ──────────────────────────── */
+@media (max-width: 480px) {
+  .modal-card {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .modal-title {
+    font-size: var(--size-xl);
+  }
+}

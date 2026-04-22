@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  /* ── Colors ─────────────────────────────────── */
+  --color-bg:            #F7F4F0;
+  --color-bg-card:       #F0EBE3;
+  --color-bg-card-alt:   #EDE7DF;
+  --color-bg-white:      #FFFFFF;
+  --color-bg-overlay:    rgba(28, 28, 26, 0.45);
+
+  --color-text-primary:  #1C1C1A;
+  --color-text-secondary:#6B6460;
+  --color-text-muted:    #9E9890;
+  --color-text-inverse:  #F7F4F0;
+
+  --color-accent:        #1C1C1A;
+  --color-accent-hover:  #2E2E2B;
+
+  --color-border:        #E2DDD8;
+  --color-border-light:  #EDE9E4;
+
+  --color-scent-1:       #B8A898;
+  --color-scent-2:       #A89880;
+  --color-scent-3:       #C4B0A0;
+
+  --color-badge-bg:      #1C1C1A;
+  --color-badge-text:    #F7F4F0;
+
+  /* ── Typography ─────────────────────────────── */
+  --font-display:        'Cormorant Garamond', Georgia, serif;
+  --font-body:           'DM Sans', sans-serif;
+
+  --size-xs:   11px;
+  --size-sm:   13px;
+  --size-base: 15px;
+  --size-md:   17px;
+  --size-lg:   22px;
+  --size-xl:   28px;
+  --size-2xl:  36px;
+  --size-3xl:  48px;
+
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semi:    600;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0em;
+  --tracking-wide:    0.06em;
+  --tracking-wider:   0.10em;
+  --tracking-widest:  0.16em;
+
+  --leading-tight:  1.2;
+  --leading-snug:   1.4;
+  --leading-normal: 1.6;
+  --leading-loose:  1.75;
+
+  /* ── Spacing (8px base grid) ────────────────── */
+  --space-1:   8px;
+  --space-2:  16px;
+  --space-3:  24px;
+  --space-4:  32px;
+  --space-5:  40px;
+  --space-6:  48px;
+  --space-8:  64px;
+  --space-10: 80px;
+  --space-12: 96px;
+  --space-16: 128px;
+
+  /* ── Borders & Radius ───────────────────────── */
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-lg:   8px;
+  --radius-pill: 100px;
+
+  --border-thin:   1px solid var(--color-border);
+  --border-light:  1px solid var(--color-border-light);
+
+  /* ── Shadows ────────────────────────────────── */
+  --shadow-sm:  0 1px 3px rgba(28, 28, 26, 0.06);
+  --shadow-md:  0 4px 16px rgba(28, 28, 26, 0.08);
+  --shadow-lg:  0 8px 32px rgba(28, 28, 26, 0.12);
+  --shadow-xl:  0 16px 48px rgba(28, 28, 26, 0.16);
+
+  /* ── Transitions ────────────────────────────── */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
+
+  /* ── Layout ─────────────────────────────────── */
+  --nav-height:      64px;
+  --max-width:       1400px;
+  --content-padding: var(--space-5);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --content-padding: var(--space-3);
+    --nav-height:      56px;
+  }
+}
